@@ -1,18 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TodoTracker</title>
-    </head>
+<div id="submitter">
+	<button type="button" id="submit" class="center" onclick="codeCorrect();" button">Submit</button>
+	<form>
+		<input type="text" id="code" class="center" placeholder="What is it?" required>
+	</form>
+</div>
+<script>
+	var code = document.getElementById("code").value;
 
-    <body>
-        <div id="submitter">
-	        <button type="button" id="submit" class="center" onclick="codeCorrect();" button">Submit</button>
-	        <form>
-		        <input type="text" id="code" class="center" placeholder="What is it?" required>
-	        </form>
-        </div>
-    </body>
-</html>
+	form.addEventListener('text', function(e) {
+		if(code == "Arson") {
+			window.location = "https://humbertobenitez576.wixsite.com/playingwithfirearg/";
+		}
+	});
+
+</script>
+
+<style>
+	.center {
+		float: left;
+		margin-right: 5px;
+	}
+
+	button {
+		font-size: 24px;
+	}
+
+	input {
+		marigin-right: 5px;
+		width: 150px;
+		height: 35px;
+		font-size: 24px;
+	}
+</style>
